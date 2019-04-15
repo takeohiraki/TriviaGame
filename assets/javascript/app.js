@@ -1,3 +1,9 @@
+var clockRunning = false;
+var time = 25;
+var correct = 0;
+var incorrect = 0;
+var unanswered = 0;
+
 $(".start-button").on("click", function() {
     console.log("Started");
 
@@ -7,15 +13,7 @@ $(".start-button").on("click", function() {
     $("#display").text(time + " seconds");
 
     start();
-
   });
-
-  var clockRunning = false;
-  var time = 25;
-  var correct = 0;
-  var incorrect = 0;
-  var unanswered = 0;
-
 
 function quiz_evaluation() {
     var selections = {
@@ -44,7 +42,6 @@ function quiz_evaluation() {
 
 }
 
-
 function quiz_summary() {
     $(".questions").hide();
 
@@ -55,7 +52,6 @@ function quiz_summary() {
     $(".quiz-summary").show();
 }
 
-
 var answers = {
     q1_answer: "2",
     q2_answer: "1",
@@ -64,7 +60,6 @@ var answers = {
 };
 console.log(answers.q1_answer);
 console.log(answers.q2_answer);
-
 
 function start() {
     if (!clockRunning) {
@@ -87,7 +82,6 @@ function count() {
         quiz_summary();
     }
 
-    // DONE: Use the variable we just created to show the converted time in the "display" div.
     $("#display").text(time + " seconds");        
   }
 
