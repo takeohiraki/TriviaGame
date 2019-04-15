@@ -1,0 +1,49 @@
+
+body {
+    background-image: url("../images/wood.jpg")
+}
+
+
+.start-button {
+
+}
+
+.questions {
+    display: none;
+}
+
+.quiz-summary {
+    display: none;
+}
+
+
+.question-div {
+    width: 70%;
+    /* height: 80%; */
+    /* border: 3px solid red; */
+    background: white;
+
+    margin: auto;
+    margin-top: 20px;;
+
+}
+
+.start-button {
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid red; */
+    text-align: center;
+}
+
+.start-game {
+    margin: auto;
+    /* border: 3px solid red; */
+    width: 50%;
+
+}
+
+label {
+    font-size: 15px;
+    /* font-style: bold; */
+}
+
